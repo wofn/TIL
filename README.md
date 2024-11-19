@@ -1,6 +1,10 @@
 # TIL
 Today I Learned - 그날 공부한 내용 정리
 
+## 2024-11-19
+### 주제: 프로젝트 
+#### Yolo, CLAHE, SAHI 코드 연결
+
 ## 2024-11-18
 ### 주제: 프로젝트 
 #### clahe clipLimit.py 코드 함수로 나누어서 최적화 해놨음
