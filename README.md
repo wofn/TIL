@@ -1,6 +1,23 @@
 # TIL
 Today I Learned - 그날 공부한 내용 정리
 
+## 2024-11-28
+### 주제: 자바 공부
+####  스트림, 파일 입출력
+- FileWriter
+- FileOutputStream
+- FileIntputStream
+- BufferedOutputStream
+- File
+#### GUI, AWT, Swing(1)
+- AWT  vs 스윙
+- 스윙 프레임
+- 컨테이너와 배치관리자
+  - FlowLayout
+  - BorderLayout
+  - GridLayout
+  - CardLayout
+
 ## 2024-11-27
 ### 주제: UML 클래스 다이어 그램 작성하고 이거로부터 코드 생성하기(순공학 기능 이용)
 
