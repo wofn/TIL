@@ -1,4 +1,3 @@
-<img width="1572" height="786" alt="스크린샷 2026-07-08 오후 10 33 26" src="https://github.com/user-attachments/assets/733851b1-a0d0-40c0-a172-91e43c67dc8e" /># TIL
 Today I Learned - 그날 공부한 내용 정리
 
 ## 2026-07-21
