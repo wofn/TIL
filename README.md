@@ -23,16 +23,16 @@ Today I Learned - 그날 공부한 내용 정리
 
 ## 2026-07-27 
 스프링 기본편 섹션7 40강 (컴포넌트 스캔과 의존관계 자동 주입 시작)
-## 컴포넌트 스캔
+### 컴포넌트 스캔
 - 전에는 AppConfig에 @Bean 하나하나 수동 등록했는데, 실무는 빈이 너무 많아서 이게 한계
 - @ComponentScan 붙이면 @Component 달린 클래스를 스프링이 알아서 다 찾아 빈 등록
 - 설정 클래스에 @Bean 없이 @ComponentScan만 있으면 됨
 
-## 빈 이름
+### 빈 이름
 - 기본은 클래스명 첫 글자만 소문자 (MemberServiceImpl → memberServiceImpl)
 - 직접 주고 싶으면 @Component("memberService2")
 
-## @Autowired 자동 주입
+### @Autowired 자동 주입
 - 생성자에 @Autowired 달면 컨테이너가 알아서 빈 찾아서 넣어줌
 - 조회는 타입 기준. getBean(타입.class) 하는 거랑 같음
 - 생성자 파라미터 여러 개여도 다 찾아서 주입해줌
