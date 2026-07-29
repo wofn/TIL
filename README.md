@@ -1,7 +1,26 @@
 Today I Learned - 그날 공부한 내용 정리
 
+## 2026-07-29
+스프링 기본편 섹션7 42강 (필터)
+
+### 필터 종류
+- includeFilters: 스캔 대상에 추가로 포함시킬 것 지정
+- excludeFilters: 스캔 대상에서 뺄 것 지정
+
+### FilterType 5가지
+- ANNOTATION: 기본값. 어노테이션 인식해서 동작
+- ASSIGNABLE_TYPE: 지정한 타입 + 그 자식 타입까지 인식
+- ASPECTJ: AspectJ 패턴으로 지정
+- REGEX: 정규표현식으로 지정
+- CUSTOM: TypeFilter 인터페이스 직접 구현해서 처리
+
+### 실무 팁
+- @Component만으로 충분해서 includeFilters 쓸 일은 거의 없음
+- excludeFilters도 간혹 쓰지만 많진 않음
+- 스프링부트는 컴포넌트 스캔을 기본 제공 → 옵션 바꾸지 말고 기본 설정에 맞춰 쓰는 게 권장
+
 ## 2026-07-28
-섹션7 41강 (탐색 위치와 기본 스캔 대상)
+스프링 기본편 섹션7 41강 (탐색 위치와 기본 스캔 대상)
 
 ### 탐색 위치 (basePackages)
 - basePackages로 탐색 시작 위치 지정 가능 → 그 패키지랑 하위 다 스캔
