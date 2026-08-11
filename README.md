@@ -1,5 +1,23 @@
 Today I Learned - 그날 공부한 내용 정리
 
+## 2026-08-11
+섹션8 47강 (롬복과 최신 트렌드)
+### 생성자 주입 코드 줄이기
+- 46강에서 생성자 주입이 정답인 건 알았는데, 생성자 코드 쓰는 게 반복적임
+- 생성자 1개면 @Autowired 생략 가능 (1차 축소)
+- 롬복 @RequiredArgsConstructor 쓰면 생성자 자체가 사라짐 (최종)
+### @RequiredArgsConstructor가 하는 일
+- final 붙은 필드를 모아서 생성자를 자동 생성 (컴파일 시점에)
+- 필드만 선언하면 됨 → 생성자 코드 안 써도 됨
+- 46강 장점(불변/final/누락 방지)은 그대로 유지
+### 롬복 자주 쓰는 것들
+- @Getter, @Setter: getter/setter 자동 생성
+- @RequiredArgsConstructor: final 필드로 생성자 자동 생성
+- @ToString 등
+### 최신 트렌드
+- 생성자 주입 + 롬복 @RequiredArgsConstructor 조합이 실무 표준
+- 코드는 간결하면서 생성자 주입 장점 다 챙김
+
 ## 2026-08-10 
 섹션8 46강 (생성자 주입을 선택해라!)
 결론: 생성자 주입을 쓰자. 이유는 아래.
