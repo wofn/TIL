@@ -1,5 +1,17 @@
 Today I Learned - 그날 공부한 내용 정리
 
+## 2026-08-12 섹션8 48강 (조회 빈이 2개 이상)
+### 문제 상황
+- @Autowired는 타입으로 빈을 찾음
+- 근데 같은 타입 빈이 2개 이상이면 스프링이 뭘 넣을지 모름
+  - 예: DiscountPolicy 타입에 FixDiscountPolicy, RateDiscountPolicy 둘 다 @Component
+  - → NoUniqueBeanDefinitionException 에러
+- (40강에서 "타입으로 찾는데 2개면?" 하고 걸어둔 문제가 여기서 실제로 터짐)
+### 안 좋은 해결책
+- 하위 타입(구현 클래스)으로 직접 지정하면 되긴 함
+- 근데 DIP 위반이고 유연성 떨어짐 → 좋은 방법 아님
+- 제대로 된 해결 방법은 다음 강의에서 (@Qualifier, @Primary 등)
+
 ## 2026-08-11
 섹션8 47강 (롬복과 최신 트렌드)
 ### 생성자 주입 코드 줄이기
